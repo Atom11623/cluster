@@ -14,7 +14,7 @@ df = load_data()
 # ---- Sidebar ----
 st.sidebar.title("📊 Customer Segmentation")
 st.sidebar.markdown("Built by *Ibrahim Ali*")
-st.sidebar.image("assets/logo.png", use_container_width=True)  # Updated to 'use_container_width'
+# st.sidebar.image("assets/logo.png", use_container_width=True)  # Removed logo
 
 # ---- Header ----
 st.title("🧠 Customer Segmentation Dashboard")
