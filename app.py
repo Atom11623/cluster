@@ -14,7 +14,7 @@ df = load_data()
 # ---- Sidebar ----
 st.sidebar.title("📊 Customer Segmentation")
 st.sidebar.markdown("Built by *Ibrahim Ali*")
-st.sidebar.image("assets/logo.png", use_column_width=True)
+st.sidebar.image("assets/logo.png", use_container_width=True)  # Updated to 'use_container_width'
 
 # ---- Header ----
 st.title("🧠 Customer Segmentation Dashboard")
@@ -71,4 +71,3 @@ if "Description" in df.columns:
 st.subheader("📥 Download Segmented Data")
 csv = df.to_csv(index=False).encode('utf-8')
 st.download_button("Download CSV", csv, "segmented_customers.csv", "text/csv")
-
